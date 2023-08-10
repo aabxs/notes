@@ -1,0 +1,64 @@
+@import "./base.css";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  position: relative;
+}
+
+.frosted {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+
+  background: rgba(59, 55, 55, 0.67);
+  backdrop-filter: blur(62px);
+  color: white;
+  transition: ease 200ms;
+}
+
+.border-gradient {
+  border: #a120f1 solid 2px;
+}
+
+@keyframes shine {
+  0% {
+    background-position: right;
+  }
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+input {
+  color: white;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.btn-primary {
+  position: relative;
+  background-color: #a120f1 !important;
+  color: white !important;
+  border: 3px #a120f1 solid !important;
+  font-weight: bolder;
+  overflow: hidden;
+}
+.btn-primary:hover {
+  background-color: transparent !important;
+  color: #a120f1 !important;
+  border: 3px #a120f1 solid;
+  font-weight: bolder;
+}
+.btn-primary:focus {
+  outline: none;
+  box-shadow: none;
+}
